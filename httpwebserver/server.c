@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 
-#define SERVER_PORT 8080  // This port number is reserved for web servers
+#define SERVER_PORT 8081  // This port number is reserved for web servers
 #define MAXLINE 4096  // maximum length of the buffer
 
 void handle_error(const char *msg)  // FUnction to handle error calls
