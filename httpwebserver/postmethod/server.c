@@ -29,7 +29,7 @@ void handle_post_request(int sockfd, const char *body)
     <html>\
     	<body>\
     		<h1>POST Request Received and Stored</h1>\
-    		<h1> 
+    		<h2>Ahamed Nadeem</h2>\
     	</body>\
     </html>";
     
