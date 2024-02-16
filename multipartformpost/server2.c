@@ -68,6 +68,10 @@ void handle_client(int sockfd)   // this function receives the input request and
 		exit(1);
 	}
 	buffer[n] = '\0'; 
+	//printf("%s\n", buffer);
+	
+	if(strncmp(buffer, "GET /favicon.ico", 16) == 0)
+		return ;
 	
 	// First we extract the filename
 	char *filename = strstr(buffer, "filename=");	
@@ -120,7 +124,7 @@ void handle_client(int sockfd)   // this function receives the input request and
 	int len2 = msg2 - msg;
 	
 	int j = 0;
-	char buffer3[len2];
+	char buffer3[1000];
 	memset(&buffer3, '\0', strlen(buffer3));
 	
 	while(len2--)
