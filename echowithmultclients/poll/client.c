@@ -1,3 +1,5 @@
+// client side program to send message to the server
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
