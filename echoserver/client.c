@@ -7,6 +7,7 @@
 #include <time.h>
 
 
+
 #define MAX_BUFFER_SIZE 4096
 #define SERVER_IP "127.0.0.1"  // IP address of the local host (server)
 #define PORT 8080
