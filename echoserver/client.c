@@ -47,7 +47,7 @@ int main()
     // Send and receive data
     while (1) 
     {
-        printf("Enter message to send to the server (or 'exit' to quit): ");
+        printf("Enter message to send to the server or 'exit' to quit: ");
         fgets(buffer, sizeof(buffer), stdin);  // get the input string from the user and store it in the buffer
 
 	if (strcmp(buffer, "exit\n") == 0)     // Exit if the user enters 'exit'

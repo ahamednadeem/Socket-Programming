@@ -46,9 +46,12 @@ void handle_client(int sockfd)   // this function receives the input request and
         perror("Error in receiving request");
         exit(1);
     }
-    buffer[n] = '\0'; //
+    buffer[n] = '\0'; 
+    printf("buffer: %s\n", buffer);
 
     char *body = strstr(buffer, "\r\n\r\n"); // now character pointer body points to the starting location of the string "\r\n\r\n"  
+    
+    printf("Message Received: %s\n", buffer);
     if (body != NULL) 
     {
         body += 4; // Move past the "\r\n\r\n" to get the body of the request
@@ -111,4 +114,3 @@ int main()
 
     return 0;
 }
-

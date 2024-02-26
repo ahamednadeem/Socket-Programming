@@ -70,8 +70,8 @@ void handle_client(int sockfd)   // this function receives the input request and
 	buffer[n] = '\0'; 
 	//printf("%s\n", buffer);
 	
-	if(strncmp(buffer, "GET /favicon.ico", 16) == 0)
-		return ;
+	if(strncmp(buffer, "GET /favicon.ico", 16) == 0)  // to handle GET Method
+		return ; 
 	
 	// First we extract the filename
 	char *filename = strstr(buffer, "filename=");	
