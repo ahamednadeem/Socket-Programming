@@ -81,6 +81,7 @@ int main()
     }
 
     memset(&serv_addr, '\0', sizeof(serv_addr));   // resets the buffer
+    
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
     serv_addr.sin_addr.s_addr = INADDR_ANY;
