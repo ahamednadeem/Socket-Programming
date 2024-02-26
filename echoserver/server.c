@@ -75,7 +75,8 @@ int main()
         strcat(buffer, " ");
       	strcat(buffer, timebuffer);
       	int a;
-    	scanf("%d",&a);
+    	scanf("%d",&a); 
+    	
         printf("Now echoing Back to the server\n");
         send(client_socket, buffer, bytes_received + 25, 0);  // Echo back the received data
     }
